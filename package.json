@@ -23,7 +23,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "check-staged": "lint-staged"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -45,7 +46,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
