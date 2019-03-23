@@ -51,7 +51,9 @@
   },
   "lint-staged": {
     "*.{js,jsx}": [
-      "eslint"
+      "eslint",
+      "eslint --fix",
+      "git add"
     ],
     "*.{js,jsx,json,md}": [
       "prettier --list-different"
